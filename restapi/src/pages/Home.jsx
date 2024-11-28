@@ -11,7 +11,22 @@ const Home = () => {
     getData();
   }, []);
 
-  return <div>Home</div>;
-};
+
+  return  (
+<div>
+   
+      {data?.map((v) => (
+        <div>
+        <img src={v.flags.png} alt ={v.name}/>
+        <h1> {v.name} </h1>
+<div>
+  <div> population : {v.population} </div>    
+  <div> population : {v.population} </div>  
+</div>
+  
+    ))
+  ;
+);
 
 export default Home;
+home aamalna data map f return 
